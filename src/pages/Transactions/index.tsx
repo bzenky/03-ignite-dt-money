@@ -2,11 +2,9 @@ import { useContext } from "react"
 import { Header } from "../../components/Header"
 import { Summary } from "../../components/Summary"
 import { TransactionsContext } from "../../contexts/TransactionsContext"
-import { dateFormatter, priceFormatter } from "../../utils/formatter"
 import { SearchForm } from "./components/SearchForm"
+import { dateFormatter, priceFormatter } from "../../utils/formatter"
 import { PriceHighlight, TransactionContainer, TransactionsTable } from "./styles"
-
-
 
 export function Transactions() {
   const { transactions } = useContext(TransactionsContext)
