@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const SummaryContainer = styled.section`
   display: grid;
@@ -32,7 +32,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     font-size: 2rem;
   }
 
-  ${({ variant }) => variant === 'green' && css`
-    background: ${({ theme }) => theme['green-500']};
-  `}
+  ${({ variant }) =>
+    variant === 'green' &&
+    css`
+      background: ${({ theme }) => theme['green-500']};
+    `}
 `
